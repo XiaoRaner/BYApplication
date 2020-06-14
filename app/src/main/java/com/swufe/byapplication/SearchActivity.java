@@ -1,5 +1,5 @@
 package com.swufe.byapplication;
-//原 西财信息查询界面
+//按标题查询必应图片
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
