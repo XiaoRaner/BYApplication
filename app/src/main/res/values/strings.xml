@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BYApplication</string>
+    <string name="select">点击一下，即刻查询</string>
+    <string name="hint">请在这里输入查询图片的关键字哦</string>
+</resources>
