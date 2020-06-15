@@ -1,5 +1,5 @@
 package com.swufe.byapplication;
-//按下载量排列
+//按下载量排列（菜单——下载榜）
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

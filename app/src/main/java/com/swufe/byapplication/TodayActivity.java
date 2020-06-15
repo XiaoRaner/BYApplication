@@ -1,5 +1,5 @@
 package com.swufe.byapplication;
-//按日期排列
+//按日期排列（主页面——最新榜）
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

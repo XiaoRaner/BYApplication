@@ -1,5 +1,5 @@
 package com.swufe.byapplication;
-//按标题查询必应图片
+//按标题查询必应图片（主页面——SEARCH）
 //AM文件需要配置网络权限
 //build.gradle界面需要配置  implementation 'org.jsoup:jsoup:1.11.3'  解析包
 import android.app.Activity;
