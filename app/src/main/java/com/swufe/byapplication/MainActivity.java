@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
     }
 
-    //打开新页面的方法3
+    //打开新页面的方法
   public void openOne(View btn){
 
        Intent config = new Intent(this, SearchActivity.class);//调用Intent对象。参数：从哪个窗口打开，要打开的窗口名字

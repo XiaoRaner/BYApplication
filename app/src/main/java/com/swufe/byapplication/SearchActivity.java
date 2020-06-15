@@ -61,7 +61,7 @@ public class SearchActivity extends AppCompatActivity implements Runnable, Adapt
         Log.i(TAG,"oncreate:当前时间"+today_sdr);
 
         Calendar ca = Calendar.getInstance();
-        ca.add(Calendar.DATE,7);
+        ca.add(Calendar.DATE,1);
         today = ca.getTime();
         final String enddate = sdf.format(today);
         if(!today_sdr.equals(updateDate)){
