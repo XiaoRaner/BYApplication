@@ -1,5 +1,7 @@
 package com.swufe.byapplication;
 //按标题查询必应图片
+//AM文件需要配置网络权限
+//build.gradle界面需要配置  implementation 'org.jsoup:jsoup:1.11.3'  解析包
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -81,7 +83,7 @@ public class SearchActivity extends AppCompatActivity implements Runnable, Adapt
                    SharedPreferences.Editor editor=SP.edit();
                    editor.putString("update_rate",enddate);
                     Log.i(TAG,"oncreate:更新时间"+enddate);
-                    Toast.makeText(SearchActivity.this,"已更新",Toast.LENGTH_LONG).show();;
+                    Toast.makeText(SearchActivity.this,"已更新~\\(≧▽≦)/~",Toast.LENGTH_LONG).show();;
                 }
                 super.handleMessage(msg);
             }
@@ -125,7 +127,7 @@ public class SearchActivity extends AppCompatActivity implements Runnable, Adapt
 
                 if(data[0]==null){//没有匹配项时
                     Toast.makeText(this, "没有查到哦", Toast.LENGTH_SHORT).show();
-                    String erry[]={"空"};
+                    String erry[]={"呜呜呜，什么都没有查到╮(╯_╰)╭"};
                     ListView listView=findViewById(R.id.list);  //引入列表
                     ListAdapter adapter=new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1,erry);
                     listView.setAdapter(adapter);                }
@@ -140,7 +142,7 @@ public class SearchActivity extends AppCompatActivity implements Runnable, Adapt
 
             }
         } else {
-            Toast.makeText(this, "请输入查询关键词", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "亲，还没输入查询的关键词呢-(￢∀￢)σ", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -160,7 +162,7 @@ public class SearchActivity extends AppCompatActivity implements Runnable, Adapt
 
 
               //获取网页
-            for(int p=1;p<=20;p++) {
+            for(int p=1;p<=10;p++) {
                 doc = Jsoup.connect("https://bing.ioliu.cn/?p="+p).get();
                 //   Log.i("TAG","run="+doc.title());//可以判断有没有获取到网页
 

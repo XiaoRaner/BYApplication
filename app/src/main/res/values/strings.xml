@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">BYApplication</string>
-    <string name="select">点击一下，即刻查询</string>
-    <string name="hint">请在这里输入查询图片的关键字哦</string>
+    <string name="app_name">必应壁纸</string>
+    <string name="select">点击一下，即刻查询^o^</string>
+    <string name="hint">•ᴗ•请输入图片查询的关键字哦</string>
+    <string name="data_list_name">最新榜【≧∇≦】</string>
+    <string name="like_list_name">下载榜【ㄟ(▔，▔)ㄏ】</string>
+    <string name="botton_name">Search</string>
+    <string name="by_search_name">必应搜索【是官网哦】</string>
 </resources>

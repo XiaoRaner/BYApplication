@@ -9,6 +9,7 @@ android:layout_height="match_parent"
 android:paddingBottom="16dp"
 android:paddingLeft="16dp"
 android:paddingRight="16dp"
+    android:background="@drawable/p1"
 tools:context=".SearchActivity">
 
 <EditText
@@ -21,12 +22,14 @@ tools:context=".SearchActivity">
     android:inputType="text" />
 
 
-<Button
-    android:id="@+id/select"
-    android:onClick="onClick"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/select" />
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9937474F"
+        android:onClick="onClick"
+        android:text="@string/select"
+        android:textColor="#FFFFFF" />
 
 <ListView
     android:id="@+id/list"
